@@ -1,0 +1,49 @@
+
+Seeing as a lot of shop keepers in my region tend to adopt the delivery feature, and the slight suffurance of customers not knowing whether or not a trader has a specific product or not, and whether or not they are available at the moment, and whether or not they feature delivery, and having to download an app or visit a specific website for each trader that (the website) will mostly be forgotten!
+
+All these stuff and more inspired me to try and fix it myself.
+The idea that came up was that I make a website that acts as a market, a place where shop keepers and customers can come together, and share their wants, and probably support eachother, and maybe, just maybe add some competitions.
+
+Another problem is that if each trader gets their own delivery person or tuk-tuk (in the countryside) it will cost a lot, and probably not be as effecient as if they were working together!
+
+And what if one trader wants to offer a discount! how will they promote it!? I mean it's ofcourse better if the promotion targets a large audiance right?!
+
+I guess the idea of discounts is gonna be very good though! It will drive more people to download the app! right?
+Cuz if they know they can search for what they want, and see the cheapest from a close trader, => less delivery fees and all this stuff! I guess it's gonna be amazing!
+
+And the fact that most of the traders don't wanna go online because maybe the people around won't really buy, cuz they probably don't have the required app or they expect to get what they want to buy after a rediculous time, like one or two days, and tha harrasment of the delivery and stuff (← for the traders not the buyers). That is why I'm also trying to make it easy for them to get online. 
+
+IN A NUT-SHELL:
+    A local marketplace where customers can discover nearby shops, check product availability/prices, order products, and potentially get delivery—while shops get an easy way to go online and advertise.
+
+chatGPT's response: https://chatgpt.com/s/t_6a82e6caaefc81918642932c2062c893
+
+------------------------------------------
+Prog Plan:
+There will be these pages: Products, Profile, Settings, Deliverers, My-Shop,  ...
+I will use google maps for location.
+
+
+
+Data:
+    
+    user:
+        username
+        email
+        password
+        firstName
+        lastName
+        phone
+        address
+        role
+        preferences:
+            language
+            theme
+            notifications
+        isShopOwner
+        createdAt
+        updatedAt
+    
+    
+
+

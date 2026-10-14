@@ -1,0 +1,87 @@
+Register a new user
+Method: POST
+URL: http://localhost:3000/api/users/register
+body:
+{
+	"user": "api_test_user_01",
+	"pwd": "TestPassword123!",
+	"firstname": "Test",
+	"lastname": "User"
+}
+
+-----------------------------
+Register the same user again (expected: username already exists)
+Method: POST
+URL: http://localhost:3000/api/users/register
+body:
+{
+	"user": "api_test_user_01",
+	"pwd": "TestPassword123!",
+	"firstname": "Test",
+	"lastname": "User"
+}
+
+-----------------------------
+Register with an invalid first name (expected: validation error)
+Method: POST
+URL: http://localhost:3000/api/users/register
+body:
+{
+	"user": "api_test_user_02",
+	"pwd": "TestPassword123!",
+	"firstname": "T",
+	"lastname": "User"
+}
+
+-----------------------------
+Register without required credentials (expected: validation error)
+Method: POST
+URL: http://localhost:3000/api/users/register
+body:
+{
+	"firstname": "Test",
+	"lastname": "User"
+}
+
+-----------------------------
+Log in with the registered user (retain the jwt cookie for logout)
+Method: PUT
+URL: http://localhost:3000/api/users/login
+body:
+{
+	"user": "api_test_user_01",
+	"pwd": "TestPassword123!"
+}
+
+-----------------------------
+Log in with an incorrect password (expected: unauthorized)
+Method: PUT
+URL: http://localhost:3000/api/users/login
+body:
+{
+	"user": "api_test_user_01",
+	"pwd": "WrongPassword123!"
+}
+
+-----------------------------
+Log in without required credentials (expected: validation error)
+Method: PUT
+URL: http://localhost:3000/api/users/login
+body:
+{}
+
+-----------------------------
+Log out without a jwt cookie (expected: unauthorized)
+Method: POST
+URL: http://localhost:3000/api/users/logout
+body:
+{}
+
+-----------------------------
+Log out after login (send the jwt cookie returned by the login request)
+Method: POST
+URL: http://localhost:3000/api/users/logout
+Cookie: jwt=<jwt cookie from login response>
+body:
+{}
+

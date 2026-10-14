@@ -1,0 +1,9 @@
+Fri Oct 02 2026 15:55:58 GMT+0300 (Eastern European Summer Time)	Message:	◇ injected env (4) from .env [2m// tip: ⌘ suppress logs { quiet: true }[0m
+Fri Oct 02 2026 15:55:58 GMT+0300 (Eastern European Summer Time)	Message:	◇ injected env (0) from .env [2m// tip: ◈ secrets for agents [www.dotenvx.com][0m
+Fri Oct 02 2026 15:55:58 GMT+0300 (Eastern European Summer Time)	Message:	◇ injected env (0) from .env [2m// tip: ◈ encrypted .env [www.dotenvx.com][0m
+Fri Oct 02 2026 15:56:01 GMT+0300 (Eastern European Summer Time)	Message:	Connected To DB ✅99999999999999
+Fri Oct 02 2026 15:56:01 GMT+0300 (Eastern European Summer Time)	Message:	✅ Connected to MongoDB
+Fri Oct 02 2026 15:56:01 GMT+0300 (Eastern European Summer Time)	Message:	Server is running on http://localhost:3000
+Fri Oct 02 2026 15:56:03 GMT+0300 (Eastern European Summer Time)	Message:	◇ injected env (4) from .env [2m// tip: ⌘ custom filepath { path: '/custom/path/.env' }[0m
+Fri Oct 02 2026 15:56:03 GMT+0300 (Eastern European Summer Time)	Message:	◇ injected env (0) from .env [2m// tip: ◈ encrypted .env [www.dotenvx.com][0m
+Fri Oct 02 2026 15:56:03 GMT+0300 (Eastern European Summer Time)	Message:	◇ injected env (0) from .env [2m// tip: ⌘ suppress logs { quiet: true }[0m

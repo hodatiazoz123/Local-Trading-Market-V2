@@ -12,7 +12,7 @@ function App() {
 
         <main>
           <h1>Hello, World!</h1>
-          {/* make an h2 here */}
+          <h2>Welcome to the Shopping Market</h2>
           
           
           
