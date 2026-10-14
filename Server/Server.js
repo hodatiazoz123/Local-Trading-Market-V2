@@ -13,7 +13,9 @@ import { fileURLToPath } from "url";
 import path from "path";
 //############Routes############
 import usersRouter from "./routes/api/user.js";
+import userProtectedRouter from "./routes/api/userProtected.js";
 import refreshTokenRouter from "./routes/api/refreshToken.js";
+
 //############Routes############
 //############middleware############
 import limitSize from "./middleware/limitSize.js";
@@ -45,6 +47,7 @@ app.use(express.urlencoded({ extended: false, limit: "30kb" }));
 app.use(limitSize);
 
 app.use("/api/users", usersRouter);
+app.use("/api/users/protected", userProtectedRouter);
 app.use("/api/users/refresh", refreshTokenRouter);
 const port = process.env.PORT;
 

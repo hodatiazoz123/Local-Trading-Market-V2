@@ -29,4 +29,4 @@ console.error = async function (...args) {
 };
 const min = Math.min;
 const max = Math.max;
-const clamp = (num, minVal, maxVal) => min(max(num, minVal), maxVal);
+globalThis.clamp = (num, minVal, maxVal) => min(max(num, minVal), maxVal);

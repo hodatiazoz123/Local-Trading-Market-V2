@@ -169,9 +169,9 @@ export const handleLogout = async (req, res) => {
 export const handleGetUsers = async (req, res) => {
     try {
         const { skip, limit } = req.query;
-        const limitValue = parseInt(limit) || 15; // Default limit to 15 if not provided
+        let limitValue = parseInt(limit) || 15; // Default limit to 15 if not provided
         limitValue = clamp(limitValue, 1, 100); // Limit the maximum value to 100
-        const skipValue = parseInt(skip) || 0;
+        let skipValue = parseInt(skip) || 0;
         skipValue = clamp(skipValue, 0, 9999999); // Ensure skip is not negative nor a huge number
         const users = await User.find({}, "-password -refreshToken")
 
@@ -187,7 +187,7 @@ export const handleGetUsers = async (req, res) => {
 export const handleGetUser = async (req, res) => {
     try {
         const { id } = req.params;
-        regex = /^[0-9a-fA-F]{24}$/; // Check if the id is a valid MongoDB ObjectId
+        const regex = /^[0-9a-fA-F]{24}$/; // Check if the id is a valid MongoDB ObjectId
         if (!regex.test(id)) {
             return res.status(400).json({ message: "Invalid user ID" });
         }
